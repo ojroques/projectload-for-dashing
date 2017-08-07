@@ -11,11 +11,11 @@ Fetch and show the load and the quality of an account from a Google Spreadsheet.
 
 # Usage
 Follow these steps to create a new account and its associated widget:
-1. Make sure the `SPREADSHEET_ID` in `account_load.rb` correspond to your Google Sheet ID.
+1. Make sure `SPREADSHEET_ID` in `account_load.rb` correspond to your Google Sheet ID.
 2. Add a new line in your Google Sheet:
     * ID is an unique string that will be used to identify the account's wigdet.
     * To add a logo, select the cell and format it with `=IMAGE("URL")`. The logo should have a transparent background for aesthetic purposes.
-3. Add this to your dashboard layout file:
+3. Add the following code to your dashboard layout file. The arguments are:
     * `data-id` is the ID from the gsheet.
     * `data-logowidth` is optional and can be used to adjust the logo width.
     * `style="background-color:#00A4C0"` is optional and set the widget background to the desired value.
