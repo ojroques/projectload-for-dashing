@@ -1,0 +1,52 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #00A4C0;
+$title-color:       #fff;
+$value-color:       #fff;
+
+// ----------------------------------------------------------------------------
+// Widget-google-spreadsheet styles
+// ----------------------------------------------------------------------------
+.widget-account-load {
+
+  background-color: $background-color;
+
+  .first_block {
+    height: 30%;
+    width:  100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .second_block {
+    height: 70%;
+    width:  100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    color: $title-color;
+    font-size: 40px;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 90%
+  }
+
+  th {
+    color: $value-color;
+    font-weight: normal;
+    font-size: 30px;
+  }
+
+  td {
+    color: $value-color;
+    font-weight: bold;
+    font-size:70px;
+  }
+}
