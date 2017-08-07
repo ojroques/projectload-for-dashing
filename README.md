@@ -5,10 +5,10 @@ Fetch and show the current load and quality of a project from a Google Spreadshe
 * [Google Application Default Credentials](https://developers.google.com/identity/protocols/application-default-credentials)
 
 # Installation
-* Install the Google API client: `gem install 'google-api-client'`
+* Install the Google API client: `gem install 'google-api-client'`.
 * Create an environment variable called `GOOGLE_APPLICATION_CREDENTIALS` pointing to your Google credentials.
 * Add `gem 'google-api-client', :require => 'google/apis'` to `Gemfile` located at the root of your dashing project.
-* Move `project_load.rb` to `jobs`
+* Move `project_load.rb` to `jobs`.
 
 # Usage
 Follow these steps to create a new project row in Google Sheet and its associated widget:
@@ -28,7 +28,7 @@ Follow these steps to create a new project row in Google Sheet and its associate
 </li>
 ```
 
-# Screenshot
+# Screenshots
 ![Sheet Example](screenshots/sheet_example.png)
 
 ![ProjectLoad Preview](screenshots/project_load.png)
