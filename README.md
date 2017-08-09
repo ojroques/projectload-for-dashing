@@ -1,13 +1,14 @@
 # Description
-Fetch and show the current load and quality of a project from a Google Spreadsheet. It is assumed here that you already have a Google Service account and credentials. For more information, check out these links:
+Fetch and display the load and quality of one or multiple projects from a Google Spreadsheet. It is assumed here that you already have a Google Service account and credentials and `bundler` installed. For more information, check out these links:
 * [Sheets API - Ruby Quickstart](https://developers.google.com/sheets/api/quickstart/ruby)
 * [OAuth 2.0 for Server to Server Applications](https://developers.google.com/api-client-library/ruby/auth/service-accounts)
 * [Google Application Default Credentials](https://developers.google.com/identity/protocols/application-default-credentials)
+* [Bundler for Ruby](http://bundler.io/)
 
 # Installation
 * Install the Google API client: `gem install 'google-api-client'`.
 * Create an environment variable called `GOOGLE_APPLICATION_CREDENTIALS` pointing to your Google credentials.
-* Add `gem 'google-api-client', :require => 'google/apis'` to `Gemfile` located at the root of your dashing project.
+* Add `gem 'google-api-client', :require => 'google/apis'` to `Gemfile` located at the root of your dashing project and run `bundle update`if necessary.
 * Move the files to the corresponding folders.
 
 # Usage
