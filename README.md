@@ -1,5 +1,5 @@
 # Description
-Fetch and display the load and quality of one or multiple projects from a Google Spreadsheet. It is assumed here that you already have a Google Service account and credentials and `bundler` installed. For more information, check out these links:
+Fetch and display the load and quality of one or multiple projects from a Google Spreadsheet. It is assumed here that you already have Google Service credentials and `bundler` installed. For more information, check out these links:
 * [Sheets API - Ruby Quickstart](https://developers.google.com/sheets/api/quickstart/ruby)
 * [OAuth 2.0 for Server to Server Applications](https://developers.google.com/api-client-library/ruby/auth/service-accounts)
 * [Google Application Default Credentials](https://developers.google.com/identity/protocols/application-default-credentials)
@@ -23,6 +23,7 @@ Follow these steps to create a new project row in Google Sheet and its associate
     * `data-id`, the project ID defined earlier.
     * `data-logowidth` is optional and can be used to adjust the logo width.
     * `style="background-color:#00A4C0"` is optional and set the widget background to the desired color.
+    * `style="background-image:url("IMAGE_URL")"` is optional and set the widget background to the desired image.
 ```
 <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
     <div data-id="project-id" data-view="ProjectLoad" data-logowidth="250" style="background-color:#00A4C0"></div>
