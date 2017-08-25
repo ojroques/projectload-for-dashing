@@ -1,23 +1,39 @@
 // ----------------------------------------------------------------------------
+// Mixins
+// ----------------------------------------------------------------------------
+
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+// ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
+
 $background-color:  #00A4C0;
-$title-color:       #fff;
+$title-color:       #000;
 $value-color:       #fff;
+$meter-background:  darken($background-color, 15%);
 
 // ----------------------------------------------------------------------------
 // Widget-google-spreadsheet styles
 // ----------------------------------------------------------------------------
+
 .widget-project-load {
 
   background-color: $background-color;
+  @include transition(background-color, 0.5s, linear);
 
   .first_block {
     height: 40%;
     width:  100%;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    padding-top: 20px;
   }
 
   .second_block {
@@ -30,23 +46,37 @@ $value-color:       #fff;
 
   .title {
     color: $title-color;
-    font-size: 40px;
+    font-weight: bold;
+    font-size: 52px;
   }
 
   table {
     table-layout: fixed;
-    width: 90%
+    width: 95%
   }
 
   th {
     color: $value-color;
-    font-weight: normal;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 26px;
+    text-shadow: 0 0 1px black;
   }
 
   td {
+    width: 50%;
+    padding-top: 20px;
     color: $value-color;
     font-weight: bold;
-    font-size:70px;
+  }
+
+  input.meter {
+    background-color: $meter-background;
+    color: #fff;
   }
 }
+
+.hotness0 { background-color: #1BA39C; }
+.hotness1 { background-color: #26A65B; }
+.hotness2 { background-color: #F5AB35; }
+.hotness3 { background-color: #F27935; }
+.hotness4 { background-color: #D91E18; }

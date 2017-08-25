@@ -1,20 +1,19 @@
 <!-- Uncomment 'title' to use the project name instead of its logo -->
 
-
 <div class="first_block">
   <!-- <h1 class="title" data-bind="project_name"></h1> -->
   <img class="logo" data-bind-src="project_logo_url" data-bind-width="logowidth"/>
 </div>
 
-<div class = "second_block">
+<div class="second_block">
   <table>
     <tr>
-      <th>Load</th>
-      <th>Quality</th>
+      <th>LOAD</th>
+      <th>QUALITY</th>
     </tr>
     <tr>
-      <td data-bind="project_load"></td>
-      <td data-bind="project_quality"></td>
+      <td><input class="meter" data-angleOffset=-125 data-angleArc=250 data-bind-data-height="height | default 130" data-bind-data-width="width | default 150" data-readOnly=true data-bind-value="project_load | shortenedNumber | prepend prefix | append suffix" data-bind-data-min="loadmin" data-bind-data-max="loadmax"></td>
+      <td><input class="meter" data-angleOffset=-125 data-angleArc=250 data-bind-data-height="height | default 130" data-bind-data-width="width | default 150" data-readOnly=true data-bind-value="project_quality | shortenedNumber | prepend prefix | append suffix" data-bind-data-min="qualitymin" data-bind-data-max="qualitymax"></td>
     </tr>
   </table>
 </div>
